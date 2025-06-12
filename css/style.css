@@ -2,8 +2,8 @@
     --hat_and_floor: #F2F4F3;
     --background: #FBFEFB;
     --hat_and_floor_text: black;
-    --logo_background: #8C3A0A;
-    --logo_border_color: rgba(red, green, blue, 0);
+    --logo_background: #b62500;
+    --logo_border_color: #432818;
 }
 
 
@@ -120,8 +120,9 @@ a, a:visited{
     transform: translate(-50%, -50%);
 
     background-color: var(--logo_background);
-    border-radius: 5px;
+    border-radius: 3px;
     border-style: dotted;
+    border-width: 4px;
     border-color: var(--logo_border_color);
 }
 
