@@ -4,6 +4,7 @@
     --hat_and_floor_text: black;
     --logo_background: #b62500;
     --logo_border_color: #432818;
+    --logo-text:aqua;
 }
 
 
@@ -130,6 +131,11 @@ a, a:visited{
     font-size: clamp(2.75rem, -0.875rem + 8.333vw, 8.5rem); 
     margin-left: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
     margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+    color: var(--logo-text);
+}
+
+.div-logo p{
+    color: var(--logo-text);
 }
 
 /* ================================================== */
