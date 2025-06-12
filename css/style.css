@@ -1,10 +1,17 @@
 :root{
-    --hat_and_floor: #F2F4F3;
-    --background: #FBFEFB;
-    --hat_and_floor_text: black;
-    --logo_background: #d00000;
-    --logo_border_color: #432818;
-    --logo-text: #E6DADF;
+    /* Fonts */
+    --font-logo: "Pacifico", cursive;
+    --font-headings: "Montserrat Alternates", sans-serif;
+    --font-body: "Outfit", sans-serif;
+    /* Colors */
+    --hat_and_floor: #F5F5F5;
+    --background: #FFFFFF;                  
+    --hat_and_floor_text: #1a1a1a;
+    --logo_background: #B00020;
+    --logo_border_color: #5C1A12;
+    --logo-text: #FFF2F2;
+
+    --base-color: #f1f1f1;
 }
 
 
@@ -16,7 +23,7 @@
 }
 
 html{
-    background-color: bisque;
+    background-color: var(--base-color);
 }
 
 body{
@@ -83,12 +90,6 @@ nav{
     border-style: dotted;
 }
 
-.div-logo p{
-    font-size: clamp(.35rem, -0.875rem + 8.333vw, 1.5rem); 
-    margin-left: clamp(0.35rem, -0.875rem + 8.333vw, 1.5rem); 
-    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
-}
-
 ul{
     display: flex;
     justify-content: center;
@@ -136,17 +137,6 @@ a, a:visited{
     border-color: var(--logo_border_color);
 }
 
-.hero-text p {
-    font-size: clamp(2.75rem, -0.875rem + 8.333vw, 8.5rem); 
-    margin-left: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
-    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
-    color: var(--logo-text);
-}
-
-.div-logo p{
-    color: var(--logo-text);
-}
-
 /* ================================================== */
 
 .home-content{
@@ -191,4 +181,57 @@ a, a:visited{
     background-color: var(--hat_and_floor);
     border-radius: 15px;
     padding: 8px;
+}
+
+/* ================== Font ==================*/
+body{
+    font-family: var(--font-body);
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.div-logo p{
+    font-family: var(--font-logo);
+    font-weight: 400;
+    font-size: clamp(1rem, 0.8rem + 3vw, 2rem);
+    color: var(--logo-text);
+
+    margin-left: clamp(0.35rem, -0.875rem + 8.333vw, 1.5rem); 
+    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+}
+
+.subtitle,
+.hero-text p{
+    font-family: var(--font-headings);
+    font-weight: 700;
+}
+
+.hero-text p{
+    font-family: var(--font-headings);
+    font-size: clamp(2.75rem, -0.875rem + 8.333vw, 8.5rem); 
+    margin-left: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+    color: var(--logo-text);
+    font-weight: 800;
+}
+
+a{
+    font-family: var(--font-headings);
+    font-weight: 600;
+}
+
+/* ================== Effects ==================*/
+a{
+    transition: color 0.2s ease;
+}
+
+a:hover{
+    color:  var(--logo_background);
+    text-decoration: underline;
+}
+
+.weoffer li:hover {
+    color: var(--logo_background);
+    transform: translateX(4px);
+    transition: all 0.2s ease;
 }
