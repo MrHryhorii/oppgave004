@@ -1,3 +1,12 @@
+:root{
+    --hat_and_floor: #F2F4F3;
+    --background: #FBFEFB;
+    --hat_and_floor_text: black;
+    --logo_background: #8C3A0A;
+    --logo_border_color: rgba(red, green, blue, 0);
+}
+
+
 /* Reset */
 *{
     margin: 0;
@@ -12,7 +21,7 @@ html{
 body{
     min-height: 100svh;
 
-    background-color: darksalmon;
+    background-color: var(--background);
 
     display: flex;
     flex-direction: column;
@@ -21,7 +30,7 @@ body{
 }
 
 header, footer{
-    background-color:chocolate;
+    background-color:var(--hat_and_floor);
 }
 
 header{
@@ -29,6 +38,7 @@ header{
 }
 
 footer{
+    margin-top: 24px;
     flex-basis: 100px;
 }
 
@@ -58,7 +68,7 @@ nav{
 
 .div-logo{
     padding: 8px;
-    background-color: aliceblue;
+    background-color: var(--logo_background);
     border-radius: 5px;
     border-style: dotted;
 }
@@ -75,7 +85,6 @@ ul{
     align-items: center;
 
     list-style-type: none;
-
 }
 
 li{
@@ -88,7 +97,7 @@ a{
 }
 
 a, a:visited{
-    color: lime;
+    color: var(--hat_and_floor_text);
 }
 
 /* ================================================== */
@@ -110,13 +119,38 @@ a, a:visited{
     left: 50%;
     transform: translate(-50%, -50%);
 
-    background-color: aliceblue;
+    background-color: var(--logo_background);
     border-radius: 5px;
     border-style: dotted;
+    border-color: var(--logo_border_color);
 }
 
 .hero-text p {
     font-size: clamp(2.75rem, -0.875rem + 8.333vw, 8.5rem); 
     margin-left: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
     margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+}
+
+/* ================================================== */
+
+.home-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weare, .weoffer{
+    width: 40%;
+
+    font-size: 24px;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 32px;
+}
+
+.weoffer ul{
+    list-style-type:circle;
+    flex-direction: column;
+    align-items: flex-start;
 }
