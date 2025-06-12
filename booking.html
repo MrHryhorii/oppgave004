@@ -5,8 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--title-->
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/booking_style.css">
         <link rel="icon" href="./img/art_and_design.png" type="image/x-icon">
+
         <title>CRAFTSVILLA - Booking</title>
         <!--preconnect-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +32,45 @@
         </header>
 
         <main>
+            <form>
 
+                <br>
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" class="text-field">
+                <br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" class="text-field">
+                <br>
+                <label for="mname">E-mail:</label>
+                <input type="text" id="mname" name="mname" class="text-field">
+                <br>
+                <label for="pname">Phone number:</label>
+                <input type="text" id="pname" name="pname" class="text-field">
+                <br>
+
+                <label for="mosaic">Mosaic Art</label>
+                <input type="radio" id="mosaic" name="art_type" value="HTML" checked>
+                
+                <label for="watercolor">Watercolor paint</label>
+                <input type="radio" id="watercolor" name="art_type" value="CSS">
+                
+                <label for="canvas">Canvas paint</label>
+                <input type="radio" id="canvas" name="art_type" value="JavaScript">
+                
+                <br>
+
+                <label for="booking_date">Select date:</label>
+                <input type="date" id="booking_date" name="booking_date" value ="2025-06-16">
+
+                <br>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="6" cols="69"></textarea>
+                <br>
+                <input type="submit" value="Submit">
+                <br>
+
+            </form>
         </main>
 
         <footer>

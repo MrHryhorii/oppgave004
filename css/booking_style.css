@@ -1,0 +1,25 @@
+form{
+    background-color: antiquewhite;
+    min-width: 700px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-field{
+    width: 75%;
+}
+
+form label{
+    align-self: self-start;
+    margin-left: 13%;
+}
+
+form textarea{
+    max-width: 75%;
+    resize: none;
+}
