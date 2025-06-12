@@ -26,7 +26,6 @@ header, footer{
 
 header{
     flex-basis: 70px;
-    
 }
 
 footer{
@@ -51,13 +50,31 @@ header{
     align-items: center;
 }
 
+nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-logo{
+    padding: 8px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    border-style: dotted;
+}
+
+.div-logo p{
+    font-size: clamp(.35rem, -0.875rem + 8.333vw, 1.5rem); 
+    margin-left: clamp(0.35rem, -0.875rem + 8.333vw, 1.5rem); 
+    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+}
+
 ul{
     display: flex;
     justify-content: center;
     align-items: center;
 
     list-style-type: none;
-    width: 100%;
 
 }
 
@@ -100,6 +117,6 @@ a, a:visited{
 
 .hero-text p {
     font-size: clamp(2.75rem, -0.875rem + 8.333vw, 8.5rem); 
-    margin-left: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); ;
-    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); ;
+    margin-left: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
+    margin-right: clamp(0.5rem, -0.875rem + 8.333vw, 1.5rem); 
 }
