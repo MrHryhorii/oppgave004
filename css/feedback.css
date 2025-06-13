@@ -6,11 +6,19 @@ main{
 article{
     margin-top: 10px;
     margin-bottom: 10px;
+
+    background-color: var(--base-color);
+    border-radius: 15px;
+
+    padding: 16px;
 }
 
 .feedback-name-date{
+    margin-top: 24px;
     display: flex;
-    gap: 32px;
+    flex-wrap: wrap;
+    justify-content: end;
+    gap: clamp(0.75rem, -0.875rem + 8.333vw, 2.5rem); 
 }
 
 form{
