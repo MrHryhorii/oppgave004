@@ -40,39 +40,46 @@
             <form>
 
                 <br>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname" class="text-field">
-                <br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname" class="text-field">
-                <br>
-                <label for="mname">E-mail:</label>
-                <input type="text" id="mname" name="mname" class="text-field">
-                <br>
-                <label for="pname">Phone number:</label>
-                <input type="text" id="pname" name="pname" class="text-field">
-                <br>
-
-                <label for="mosaic">Mosaic Art</label>
-                <input type="radio" id="mosaic" name="art_type" value="HTML" checked>
-                
-                <label for="watercolor">Watercolor paint</label>
-                <input type="radio" id="watercolor" name="art_type" value="CSS">
-                
-                <label for="canvas">Canvas paint</label>
-                <input type="radio" id="canvas" name="art_type" value="JavaScript">
-                
-                <br>
-
-                <label for="booking_date">Select date:</label>
-                <input type="date" id="booking_date" name="booking_date" value ="2025-06-16">
+                <h1>
+                    BOOK WORKSHOP
+                </h1>
 
                 <br>
-                <label for="message">Message:</label>
                 <br>
-                <textarea id="message" name="message" rows="6" cols="69"></textarea>
+
+                <h2>
+                    SELECT ART FORM
+                </h2>
+                <select id="art-form" name="art_form">
+                    <option value="mosaic">Mosaic Art – 400 NOK</option>
+                    <option value="watercolor">Watercolor Painting – 200 NOK</option>
+                    <option value="canvas">Canvas Painting – 300 NOK</option>
+                </select>
+
                 <br>
-                <input type="submit" value="Submit">
+
+                <h2>
+                    SELECT DATE AND TIME
+                </h2>
+                <div class="date-and-time">
+                    <input type="date" id="booking_date" name="booking_date" value ="2025-06-16">
+                    <input type="time" id="booking_time" name="booking_time" value = "09:30:00">
+                </div>
+
+                <br>
+
+                <h2>
+                    PERSONAL DETAILES
+                </h2>
+                <input type="text" id="fname" name="fname" class="text-field" placeholder="Your Name">
+                <br>
+                <input type="tel" id="pname" name="pname" class="text-field" placeholder="Mobile number*" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <br>
+                <input type="email" id="email" name="email" class="text-field" placeholder="E-mail(optional)">
+                <br>
+                <textarea id="message" name="message" class="text-field" placeholder="Type text message"></textarea>
+                <br>
+                <input type="submit" class="submit" value="Submit">
                 <br>
 
             </form>
