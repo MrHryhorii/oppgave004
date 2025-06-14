@@ -3,22 +3,51 @@ main{
     margin: auto;
 }
 
-article{
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-    background-color: var(--base-color);
-    border-radius: 15px;
-
-    padding: 16px;
-}
-
-.feedback-name-date{
-    margin-top: 24px;
+.feedback-block{
     display: flex;
     flex-wrap: wrap;
-    justify-content: end;
-    gap: clamp(0.75rem, -0.875rem + 8.333vw, 2.5rem); 
+    gap: 8px;
+}
+
+article{
+    background-color: var(--hat_and_floor);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 16px auto;
+    max-width: 400px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+article:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
+
+.feedback-name-date {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    font-size: 0.9rem;
+    color: #555;
+    opacity: 0.8;
+}
+
+.feedback-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--hat_and_floor_text);
+    text-align: justify;
+
+    word-break: break-word;
+    white-space: normal;  
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--font-headings);
+    font-size: 32px;
+    font-weight: 700;
+    margin: 24px 0 8px;
 }
 
 form {
@@ -101,6 +130,10 @@ form textarea{
     form h3{
         margin-left: 10.5%;
     }
+
+    article{
+        max-width: 500px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -118,6 +151,10 @@ form textarea{
     form h3{
         margin-left: 5.25%;
     }
+
+    article{
+        max-width: 600px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -134,5 +171,9 @@ form textarea{
 
     form h3{
         margin-left: 3%;
+    }
+
+    article{
+        max-width: 700px;
     }
 }
