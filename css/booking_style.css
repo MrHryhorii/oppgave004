@@ -54,12 +54,6 @@ form select{
     width: 75%;
 }
 
-.submit{
-    padding: 8px;
-    width: 25%;
-    min-width: fit-content;
-}
-
 form textarea{
     width: 75%;
     height: 100px;
