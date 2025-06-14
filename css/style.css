@@ -24,8 +24,6 @@
 
 html{
     background-color: var(--base-color);
-
-    overflow-y: scroll; /*always active scrollbar*/
 }
 
 body{
@@ -37,6 +35,8 @@ body{
     flex-direction: column;
 
     justify-content: space-between;
+
+    overflow-x: hidden; /* cut header, kill h-scrollbar*/
 }
 
 header, footer{
@@ -45,6 +45,7 @@ header, footer{
 
 header{
     flex-basis: 70px;
+    width: 100vw; /* size with v-scrollbar*/
 }
 
 footer{
