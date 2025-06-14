@@ -24,6 +24,8 @@
 
 html{
     background-color: var(--base-color);
+
+    overflow-y: scroll; /*always active scrollbar*/
 }
 
 body{
