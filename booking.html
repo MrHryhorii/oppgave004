@@ -20,6 +20,7 @@
     </head>
 
     <body>
+        <!-- Header -->
         <header>
             <nav>
                 <div class="div-logo">
@@ -35,8 +36,9 @@
                 </ul>
             </nav>
         </header>
-
+        <!-- Booking form -->
         <main>
+            <!-- Form start -->
             <form>
 
                 <br>
@@ -50,6 +52,7 @@
                 <h2>
                     SELECT ART FORM
                 </h2>
+                <!-- Select service -->
                 <select id="art-form" name="art_form">
                     <option value="mosaic">Mosaic Art – 400 NOK</option>
                     <option value="watercolor">Watercolor Painting – 200 NOK</option>
@@ -62,7 +65,9 @@
                     SELECT DATE AND TIME
                 </h2>
                 <div class="date-and-time">
+                    <!-- Select date -->
                     <input type="date" id="booking_date" name="booking_date" value ="2025-06-16">
+                    <!-- Select time -->
                     <input type="time" id="booking_time" name="booking_time" value = "09:30:00">
                 </div>
 
@@ -71,9 +76,10 @@
                 <h2>
                     PERSONAL DETAILES
                 </h2>
-                <input type="text" id="fname" name="fname" class="text-field" placeholder="Your Name">
+                <!-- Name and contact -->
+                <input type="text" id="fname" name="fname" class="text-field" placeholder="Your Name" required>
                 <br>
-                <input type="tel" id="pname" name="pname" class="text-field" placeholder="Mobile number*" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <input type="tel" id="pname" name="pname" class="text-field" placeholder="Mobile number*" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
                 <br>
                 <input type="email" id="email" name="email" class="text-field" placeholder="E-mail(optional)">
                 <br>
@@ -84,7 +90,7 @@
 
             </form>
         </main>
-
+        <!-- Footer -->
         <footer>
             <p>Contact us with email: craftsvilla@fakemail.no</p>
             <p>Contact us with phone: +4700000001</p>

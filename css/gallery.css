@@ -3,14 +3,14 @@
     margin: auto;
     padding: 24px 0;
 }
-
+/* Grid layout */
 .gallery-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
     }
-
+/* Image blocks */
 .image-box {
     width: 350px;
     height: 250px;
@@ -21,7 +21,7 @@
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
-
+/* Hover effect */
 .image-box:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);

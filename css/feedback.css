@@ -1,3 +1,4 @@
+/* Comments layout */
 main{
     width: 90%;
     margin: auto;
@@ -8,7 +9,7 @@ main{
     flex-wrap: wrap;
     gap: 8px;
 }
-
+/* Comment styles */
 article{
     background-color: var(--hat_and_floor);
     border-radius: 10px;

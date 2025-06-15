@@ -1,3 +1,4 @@
+/* Variables */
 :root{
     /* Fonts */
     --font-logo: "Pacifico", cursive;
@@ -21,7 +22,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Base layout */
 html{
     background-color: var(--base-color);
 }
@@ -38,7 +39,7 @@ body{
 
     overflow-x: hidden; /* cut header, kill h-scrollbar*/
 }
-
+/* Header & nav */
 header, footer{
     background-color:var(--hat_and_floor);
 }
@@ -47,7 +48,7 @@ header{
     flex-basis: 70px;
     width: 100vw; /* size with scrollbar*/
 }
-
+/* Footer */
 footer{
     margin-top: 24px;
     flex-basis: 100px;
